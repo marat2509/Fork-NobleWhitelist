@@ -50,9 +50,16 @@ jobs:
     # - name: Build with Gradle 8.5
     #   run: gradle build
 
-    - name: Upload a Build Artifact
+    - name: Upload a NobleWhitelist
       uses: actions/upload-artifact@v4.3.1
       with:
         name: NobleWhitelist
-        path: build/libs/*.jar
+        path: NobleWhitelist/build/libs/*.jar
+        if-no-files-found: error
+
+    - name: Upload a NWLDiscord
+      uses: actions/upload-artifact@v4.3.1
+      with:
+        name: NWLDiscord
+        path: NWLDiscord/build/libs/*.jar
         if-no-files-found: error
