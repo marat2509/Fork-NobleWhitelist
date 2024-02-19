@@ -90,7 +90,7 @@ public class NWlCommand {
         }
     }
     private void constructCommands() {
-        final Command.Builder<CommandSender> builder = this.manager.commandBuilder("nwhitelist", "nwl", "noblewl", "nwhitelist")
+        final Command.Builder<CommandSender> builder = this.manager.commandBuilder("nwhitelist", "nwl", "noblewl", "nwhitelist", "whitelist", "wl")
                 .meta(CommandMeta.DESCRIPTION, "Command for the whitelist management")
                 .permission("noblewhitelist.admin");
 
